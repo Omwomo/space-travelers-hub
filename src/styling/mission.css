@@ -1,0 +1,8 @@
+.wider {
+  width: 500px;
+}
+
+.missionTable {
+  display: flex;
+  justify-content: center;
+}
