@@ -131,17 +131,17 @@ To run tests, run the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Author 1**
+👤 **Eugene Omwomo**
 
 - GitHub: [@Omwomo](https://github.com/Omwomo)
 - Twitter: [@eugeneoduor9](https://twitter.com/eugeneoduor9)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/Omwomo)
 
-👤 **Author 1**
+👤 **George Hamman**
 
-- GitHub: [@George](https://github.com/george)
-- Twitter: [@george](https://twitter.com/george)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Omwomo)
+- GitHub: [@George7h](https://github.com/George7h)
+- Twitter: [@GJ2H](https://twitter.com/GJ2H)
+- LinkedIn: [George Hamman](https://linkedin.com/in/george-hamman-95b98224b)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
