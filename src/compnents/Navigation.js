@@ -5,11 +5,11 @@ import planet from '../assets/planet.png';
 export default function Navigation() {
   return (
     <nav className="navbar">
-      <div className="avatar">
-        <img src={planet} alt="Avatar" />
+      <div className="logo">
+        <img src={planet} alt="Logo" />
       </div>
       <div className="logo">
-        BOOK STORE
+        SPACE TRAVELERS HUB
       </div>
       <ul className="nav-links">
         <li><Link to="/">Rockets</Link></li>
