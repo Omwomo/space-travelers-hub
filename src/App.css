@@ -6,6 +6,8 @@
   display: flex;
   padding: 1rem;
   border-bottom: 1px solid #ccc3c3;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-links {
@@ -16,4 +18,19 @@
 
 .nav-links li {
   padding-right: 1rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3e97ff;
+}
+
+.active-link a {
+  text-decoration: underline;
+  color: #1864ba;
+}
+
+.container {
+  margin: 10px;
 }
