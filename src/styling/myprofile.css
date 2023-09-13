@@ -1,0 +1,25 @@
+.summary {
+  display: flex;
+  justify-content: center;
+}
+
+.sortedlist {
+  list-style: none;
+}
+
+.sortedlist li {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  margin-left: -40px;
+  width: 200px;
+}
+
+.sortedlist li:nth-child(even) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.sortedlist li:last-child {
+  border: 1px solid lightgrey;
+  border-top: none;
+}
