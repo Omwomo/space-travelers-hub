@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchRockets, reserveRocket, cancelRocketReservation } from '../redux/rockets/rocketSlice';
 import './rockets.css';
@@ -15,9 +15,16 @@ const Rockets = () => {
     dispatch(cancelRocketReservation(id));
   };
 
+  const [dataFetched, setDataFetched] = useState(false);
+
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    const rocketsInStore = rockets && rockets.length > 0;
+
+    if (!rocketsInStore && !dataFetched) {
+      dispatch(fetchRockets());
+      setDataFetched(true);
+    }
+  }, [rockets, dataFetched, dispatch]);
 
   return (
     <div>
