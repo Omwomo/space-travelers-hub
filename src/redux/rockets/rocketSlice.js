@@ -47,3 +47,4 @@ const rocketSlice = createSlice({
 });
 
 export default rocketSlice.reducer;
+export const { reserveRocket, cancelRocketReservation } = rocketSlice.actions;
