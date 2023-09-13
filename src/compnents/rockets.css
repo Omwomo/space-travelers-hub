@@ -1,0 +1,34 @@
+.rocket-card {
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.rocket-image {
+  width: 13rem;
+  height: 10rem;
+  padding-right: 1rem;
+}
+
+.reserve-button {
+  background-color: rgb(82, 82, 224);
+  padding: 0.4rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #fff;
+  padding: 0.4rem;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reserved {
+  background-color: rgb(82, 82, 224);
+  margin-right: 0.5rem;
+  border-radius: 3px;
+  color: #fff;
+  padding: 2px;
+}
