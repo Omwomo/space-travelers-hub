@@ -27,25 +27,29 @@ function Missions() {
   };
 
   return (
-    <div>
+    <div className="contain">
       <table id="missionsTable">
-        <th>Mission</th>
-        <th>Description</th>
-        <th>Status</th>
-        <th>&nbsp;</th>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
         <tbody>
           {missions.map((mission) => (
             <tr key={mission.mission_id}>
-              <td>{mission.mission_name}</td>
+              <th>{mission.mission_name}</th>
               <td>{mission.description}</td>
-              <td>{mission.reserved ? 'Reserved' : 'Not Reserved'}</td>
+              <td>{mission.reserved ? <p className="rlabel">Active Member</p> : <p className="nlabel">NOT A MEMBER</p>}</td>
               <td>
                 {mission.reserved ? (
-                  <button type="button" onClick={() => handleLeaveMission(mission.mission_id)}>
+                  <button type="button" className="leavembtn" onClick={() => handleLeaveMission(mission.mission_id)}>
                     Leave Mission
                   </button>
                 ) : (
-                  <button type="button" onClick={() => handleJoinMission(mission.mission_id)}>
+                  <button type="button" className="joinmbtn" onClick={() => handleJoinMission(mission.mission_id)}>
                     Join Mission
                   </button>
                 )}
