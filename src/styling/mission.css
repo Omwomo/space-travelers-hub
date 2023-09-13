@@ -4,8 +4,12 @@
   margin: 10px;
 }
 
-#missionsTable tr:nth-child(even) {
+#missionsTable tr:nth-child(odd) {
   background-color: #f2f2f2;
+}
+
+.top {
+  background-color: white;
 }
 
 #missionsTable {

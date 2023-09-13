@@ -29,12 +29,12 @@ function Missions() {
   return (
     <div className="contain">
       <table id="missionsTable">
-        <thead>
+        <thead id="top">
           <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>&nbsp;</th>
+            <th className="top">Mission</th>
+            <th className="top">Description</th>
+            <th className="top">Status</th>
+            <th className="top">&nbsp;</th>
           </tr>
         </thead>
         <tbody>
