@@ -1,0 +1,25 @@
+.wider {
+  width: 500px;
+}
+
+#missionsTable tr:nth-child(even) {
+  background-color: #c9c9c9;
+}
+
+#missionsTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#missionsTable td,
+#missionsTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#missionsTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
