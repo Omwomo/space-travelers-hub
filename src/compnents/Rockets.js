@@ -1,20 +1,44 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchRockets, reserveRocket, cancelRocketReservation } from '../redux/rockets/rocketSlice';
+import './rockets.css';
 
-const RocketsComponent = () => {
-  const rockets = useSelector((state) => state.rockets);
+const Rockets = () => {
+  const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets.rockets);
+
+  const handleReserveRocket = (id) => {
+    dispatch(reserveRocket(id));
+  };
+
+  const cancelReservation = (id) => {
+    dispatch(cancelRocketReservation(id));
+  };
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
 
   return (
     <div>
       {rockets.map((rocket) => (
-        <div key={rocket.id}>
-          <h3>{rocket.rocket_name}</h3>
-          <p>{rocket.description}</p>
-          <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
+        <div className="rocket-card" key={rocket.id}>
+          <img className="rocket-image" src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
+          <div className="details">
+            <h2>{rocket.name}</h2>
+            <p>
+              {rocket.reserved ? <span className="reserved">Reserved</span> : null}
+              {rocket.description}
+            </p>
+            <div>
+              {rocket.reserved ? (<button type="button" className="cancel-button" onClick={() => cancelReservation(rocket.id)}>Cancel Reservation</button>)
+                : (<button type="button" className="reserve-button" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>)}
+            </div>
+          </div>
         </div>
       ))}
     </div>
   );
 };
 
-export default RocketsComponent;
+export default Rockets;
