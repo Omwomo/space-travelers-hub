@@ -4,8 +4,10 @@ import '../styling/myprofile.css';
 
 function MyProfile() {
   const missions = useSelector((state) => state.missions.missions);
-
   const joinedMissions = missions.filter((mission) => mission.reserved);
+
+  const rockets = useSelector((state) => state.rockets.rockets);
+  const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
     <div className="summary">
@@ -19,6 +21,18 @@ function MyProfile() {
           </ul>
         ) : (
           <p>No missions joined yet.</p>
+        )}
+      </div>
+      <div className="joined-missions-rockets">
+        <h3>My Rockets</h3>
+        {reservedRockets.length > 0 ? (
+          <ul className="sortedlist">
+            {reservedRockets.map((rocket) => (
+              <li key={rocket.mission_id}>{rocket.name}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>No Rockets Reserved Yet.</p>
         )}
       </div>
     </div>
