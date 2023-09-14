@@ -1,20 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import planet from '../assets/planet.png';
+import { Link, useLocation } from 'react-router-dom';
+import planet from '../assets/planet1.png';
+import '../App.css';
 
 export default function Navigation() {
+  const location = useLocation();
+
   return (
     <nav className="navbar">
       <div className="logo">
         <img src={planet} alt="Logo" />
       </div>
       <div className="logo">
-        SPACE TRAVELERS HUB
+        SPACE TRAVELERS&apos; HUB
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Rockets</Link></li>
-        <li><Link to="/missions">Missions</Link></li>
-        <li><Link to="/my-profile">My Profile</Link></li>
+        <li className={location.pathname === '/' ? 'active-link' : ''}>
+          <Link to="/">Rockets</Link>
+        </li>
+        <li className={location.pathname === '/missions' ? 'active-link' : ''}>
+          <Link to="/missions">Missions</Link>
+        </li>
+        <li className={location.pathname === '/my-profile' ? 'active-link' : ''}>
+          <Link to="/my-profile">My Profile</Link>
+        </li>
       </ul>
     </nav>
   );
