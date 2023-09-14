@@ -12,7 +12,7 @@ export default function Navigation() {
         <img src={planet} alt="Logo" />
       </div>
       <div className="logo">
-        SPACE TRAVELERS&apos; HUB
+        Space Travelers&apos; Hub
       </div>
       <ul className="nav-links">
         <li className={location.pathname === '/' ? 'active-link' : ''}>
