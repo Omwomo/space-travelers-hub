@@ -4,10 +4,16 @@
 
 .navbar {
   display: flex;
-  padding: 1rem;
+  padding: 0.2rem;
   border-bottom: 1px solid #ccc3c3;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.8rem;
+  padding-left: 1rem;
 }
 
 .nav-links {

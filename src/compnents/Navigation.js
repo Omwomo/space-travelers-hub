@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import planet from '../assets/planet.png';
+import planet from '../assets/planet1.png';
 import '../App.css';
 
 export default function Navigation() {
@@ -12,7 +12,7 @@ export default function Navigation() {
         <img src={planet} alt="Logo" />
       </div>
       <div className="logo">
-        SPACE TRAVELERS HUB
+        SPACE TRAVELERS&apos; HUB
       </div>
       <ul className="nav-links">
         <li className={location.pathname === '/' ? 'active-link' : ''}>
