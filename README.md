@@ -9,28 +9,37 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Space Travelers Hub\] ](#-space-travelers-hub-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 
 # 📖 [Space Travelers Hub] <a name="about-project"></a>
 
 
-**[Space Travelers Hub]** This group project is build using React-Redux framework.
+**[Space Travelers Hub]** The application works with the real live data of SpaceX missions and rockets.
+
+Using this application, users can:
+
+- Join SpaceX mission
+- book SpaceX rockets
+- See reserved rockets and space missions in the My Profile section.
+
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,25 +55,12 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
-
 ### Key Features <a name="key-features"></a>
 
 
-- **The project is build using React framework.**
-- **The project uses gitflow**
+- **Join SpaceX missions and leave missions**
+- **Book SpaceX Rockets and cancel previous booking**
+- **View reserved Missions and Rockets**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,12 +74,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
-
-```sh
- gem install rails
-```
-
+- gitHub account;
+- VScode;
+- Node.js
 
 ### Setup
 
@@ -91,7 +84,6 @@ Clone this repository to your desired folder:
 
 
 ```sh
-  cd eugo
   git clone https://github.com/Omwomo/bookstore.git
 ```
 
@@ -102,8 +94,7 @@ Install this project with:
 
 
 ```sh
-  cd eugo
-  gem install
+  npm install
 ```
 
 
@@ -113,7 +104,7 @@ To run the project, execute the following command:
 
 
 ```sh
-  vs code
+  npm start
 ```
 
 ### Run tests
@@ -121,7 +112,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npx jest
 ```
 
 
